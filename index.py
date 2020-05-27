@@ -2,6 +2,7 @@ import pyspark
 import os
 
 os.environ['YARN_CONF_DIR'] = os.getcwd() + '/conf'
+os.environ['HADOOP_CONF_DIR'] = os.getcwd() + '/conf'
 os.environ["HADOOP_USER_NAME"] = 'root'
 
 conf = pyspark.SparkConf()

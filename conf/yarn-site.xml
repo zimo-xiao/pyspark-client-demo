@@ -4,24 +4,14 @@
         <name>yarn.resourcemanager.hostname</name>
         <value>hadoop01.cigi.illinois.edu</value>
     </property>
+
     <property>
-        <name>yarn.resourcemanager.scheduler.address</name>
-        <value>hadoop01.cigi.illinois.edu:8030</value>
+        <name>yarn.nodemanager.pmem-check-enabled</name>
+        <value>false</value>
     </property>
+
     <property>
-        <name>yarn.resourcemanager.address</name>
-        <value>hadoop01.cigi.illinois.edu:8032</value>
-    </property>
-    <property>
-        <name>yarn.resourcemanager.webapp.address</name>
-        <value>hadoop01.cigi.illinois.edu:8088</value>
-    </property>
-    <property>
-        <name>yarn.resourcemanager.resource-tracker.address</name>
-        <value>hadoop01.cigi.illinois.edu:8031</value>
-    </property>
-    <property>
-        <name>yarn.resourcemanager.admin.address</name>
-        <value>hadoop01.cigi.illinois.edu:8033</value>
+        <name>yarn.nodemanager.vmem-check-enabled</name>
+        <value>false</value>
     </property>
 </configuration>
