@@ -9,6 +9,7 @@ conf = pyspark.SparkConf()
 conf.setAppName('hello')
 conf.setMaster('yarn')
 conf.set('spark.submit.deployMode', 'client')
+conf.set('spark.hadoop.fs.defaultFS', 'hdfs://hadoop01.cigi.illinois.edu:9000')
 
 sc = pyspark.SparkContext(conf=conf)
 
