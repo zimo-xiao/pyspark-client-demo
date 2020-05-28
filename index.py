@@ -1,15 +1,14 @@
 import pyspark
 import os
 
-os.environ['YARN_CONF_DIR'] = os.getcwd() + '/conf'
-os.environ['HADOOP_CONF_DIR'] = os.getcwd() + '/conf'
-os.environ["HADOOP_USER_NAME"] = 'root'
+os.environ["YARN_CONF_DIR"] = os.getcwd() + "/conf"
+os.environ["HADOOP_CONF_DIR"] = os.getcwd() + "/conf"
+os.environ["HADOOP_USER_NAME"] = "root"
 
 conf = pyspark.SparkConf()
-conf.setAppName('hello')
-conf.setMaster('yarn')
-conf.set('spark.submit.deployMode', 'client')
-conf.set('spark.hadoop.fs.defaultFS', 'hdfs://hadoop01.cigi.illinois.edu:9000')
+conf.setAppName("hello")
+conf.setMaster("yarn")
+conf.set("spark.submit.deployMode", "client")
 
 sc = pyspark.SparkContext(conf=conf)
 
