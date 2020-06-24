@@ -4,6 +4,7 @@
         <name>fs.defaultFS</name>
         <value>hdfs://hadoop01.cigi.illinois.edu:9000</value>
     </property>
+
     <property>
         <name>dfs.client.use.legacy.blockreader</name>
         <value>true</value>

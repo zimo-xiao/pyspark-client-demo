@@ -6,7 +6,7 @@ os.environ["HADOOP_CONF_DIR"] = os.getcwd() + "/conf"
 os.environ["HADOOP_USER_NAME"] = "root"
 
 conf = pyspark.SparkConf()
-conf.setAppName("hello")
+conf.setAppName("hello3")
 conf.setMaster("yarn")
 conf.set("spark.submit.deployMode", "client")
 
